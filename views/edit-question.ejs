@@ -1,0 +1,63 @@
+<div class="aw-container-wrap">
+    <div class="container aw-publish">
+        <div class="row">
+            <div class="aw-content-wrap clearfix">
+                <div class="col-sm-12 col-md-9 aw-main-content">
+                    <ul class="nav nav-tabs aw-nav-tabs active">
+                        <h2 class="hidden-xs">
+                            <i class="fa fa-credit-card"></i>
+                            发起
+                        </h2>
+                    </ul>
+                    <!--问题的主题-->
+                    <form action="" method="post">
+                        <div class="aw-mod aw-mod-publish">
+                            <div class="mod-body">
+                                <h3>问题的分类</h3>
+                                <div class="aw-publish-title">
+                                    <div>
+                                        <select class="form-control">
+                                            <option>HTML5</option>
+                                            <option>CSS3</option>
+                                            <option>JAVASCRIPT</option>
+                                            <option>PHP7</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <h3>问题的标题</h3>
+                                <div class="aw-publish-title">
+                                    <div>
+                                        <input type="text" placeholder="问题标题..." class="form-control">
+                                        <div class="aw-publish-suggest-question hide">
+                                            <p class="text-color-999">你的问题可能已经有答案了..</p>
+                                            <ul class="aw-dropdown-list"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3>问题补充:</h3>
+                                <div class="aw-mod aw-editor-box">
+                                    <div class="mod-head">
+                                        <textarea id="question"></textarea>
+                                    </div>
+                                    <div class="mod-body">
+                                        <span class="pull-right text-color-999" id="question_detail_message">&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mod-footer clearfix">
+                                <a class="btn btn-large btn-success" href="#">确认发起</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var simplemde = new SimpleMDE({
+        element: $("#question")[0] ,
+        status:false,
+        styleSelectedText:false,
+    });
+</script>
